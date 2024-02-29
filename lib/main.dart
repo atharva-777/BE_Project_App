@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => const HomePage(),
         "/detect": (contex) => const PlantLeafImagePicker()
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
