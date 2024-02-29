@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,7 +14,11 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            Image.asset("assets/images/hero.png"),
+            Image.asset(
+              "assets/images/hero.png",
+              width: double.infinity,
+              height: 200,
+            ),
             const Text(
               "Welcome to Planty! Plant Leaf Disease Detection",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
